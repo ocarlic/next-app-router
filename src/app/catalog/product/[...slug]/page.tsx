@@ -1,3 +1,5 @@
+import { AddToCartButton } from "./add-to-cart-button";
+
 interface ProductProps {
   params: {
     slug: string[];
@@ -20,6 +22,8 @@ export default async function Product({ params }: ProductProps) {
       <h1>{`Product ${productId}`}</h1>
       <p>{`Size ${size}`}</p>
       <p>{`Color ${color}`}</p>
+
+      <AddToCartButton />
     </div>
   );
 }
